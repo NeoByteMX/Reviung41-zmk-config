@@ -21,7 +21,7 @@
         key: key {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(N) &kp N0 &kp V &kp I &kp N3 &kp M &kp B &kp R &kp N3 &kp RIGHT_BRACKET &kp N2 &kp N9>;
+            bindings = <&none &kp LS(N) &kp N0 &kp V &kp I &kp N3 &kp M &kp B &kp R &kp N3 &kp RS(RIGHT_BRACKET) &kp N2 &kp N9>;
             label = "KEY";
         };
 
