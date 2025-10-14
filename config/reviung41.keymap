@@ -38,6 +38,20 @@
             bindings = <&none &kp LS(V) &kp N7 &kp U &kp E &kp B &kp B &kp DLLR &kp LS(V) &kp LS(Q) &kp LS(M) &kp U &kp LS(U) &kp LS(B) &kp N9 &kp LS(X) &kp LS(Q)>;
             label = "NEW_WORK";
         };
+
+        Lecura: Lecura {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp A &kp L &kp J &kp B &kp N6 &kp N2>;
+            label = "LECURA";
+        };
+
+        Escritura: Escritura {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp A &kp L &kp J &kp B &kp N1 &kp N0>;
+            label = "ESCRITURA";
+        };
     };
 
     keymap {
@@ -66,10 +80,10 @@
             //                       |     |     | RET | ADJ |     |
 
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0      &kp BACKSPACE
-&kp LEFT_CONTROL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &new_work             &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT  &kp ESCAPE  &kp DELETE
-&kp LEFT_SHIFT    &pc           &key          &work          &kp CLCK      &none                 &kp HOME      &kp END   &kp PG_UP     &kp PG_DN  &kp PSCRN   &kp ENTER
-                                              &kp RIGHT_ALT  &trans                   &kp SPACE                &mo 3     &kp LEFT_WIN
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                 &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0      &kp BACKSPACE
+&kp LEFT_CONTROL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &work                  &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT  &kp ESCAPE  &kp DELETE
+&kp LEFT_SHIFT    &pc           &key          &new_work      &Lecura       &Escritura             &kp HOME      &kp END   &kp PG_UP     &kp PG_DN  &kp PSCRN   &kp ENTER
+                                              &kp RIGHT_ALT  &trans                    &kp SPACE                &mo 3     &kp LEFT_WIN
             >;
         };
 
