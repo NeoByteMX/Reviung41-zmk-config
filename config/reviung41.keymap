@@ -65,10 +65,10 @@
             //                         | ALT | LWR | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp G             &kp J  &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp D             &kp H  &kp N  &kp E         &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B             &kp K  &kp M  &kp COMMA     &kp DOT  &kp FSLH       &mt LEFT_SHIFT ENTER
-                         &kp LALT  &mo 1         &kp SPACE         &mo 2  &kp LEFT_WIN
+&kp TAB    &kp APOS  &kp COMMA  &kp DOT   &kp P    &kp Y             &kp F  &kp G  &kp C         &kp R  &kp L  &kp BSPC
+&kp LCTRL  &kp A     &kp O      &kp E     &kp U    &kp I             &kp D  &kp H  &kp T         &kp N  &kp S  &kp FSLH
+&kp LSHFT  &kp SEMI  &kp Q      &mt C J   &mt V K  &kp X             &kp B  &kp M  &kp W         &kp V  &kp Z  &mt LEFT_SHIFT ENTER
+                                &kp LALT  &mo 1           &kp SPACE         &mo 2  &kp LEFT_WIN
             >;
         };
 
@@ -80,10 +80,10 @@
             //                       |     |     | RET | ADJ |     |
 
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                 &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0      &kp BACKSPACE
-&kp LEFT_CONTROL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &work                  &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT  &kp ESCAPE  &kp DELETE
-&kp LEFT_SHIFT    &pc           &key          &new_work      &Lecura       &Escritura             &kp HOME      &kp END   &kp PG_UP     &kp PG_DN  &kp PSCRN   &kp ENTER
-                                              &kp RIGHT_ALT  &trans                    &kp SPACE                &mo 3     &kp LEFT_WIN
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                &kp NUMBER_6  &kp N7      &kp N8        &kp N9     &kp N0      &kp BACKSPACE
+&kp LEFT_CONTROL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &new_work             &kp LEFT      &kp DOWN    &kp UP        &kp RIGHT  &kp ESCAPE  &kp DELETE
+&kp LEFT_SHIFT    &pc           &key          &kp K_COPY     &kp K_PASTE   &kp CAPS              &Lecura       &Escritura  &kp PG_UP     &kp PG_DN  &kp PSCRN   &kp ENTER
+                                              &kp RIGHT_ALT  &trans                   &kp SPACE                &mo 3       &kp LEFT_WIN
             >;
         };
 
