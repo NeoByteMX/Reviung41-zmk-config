@@ -77,14 +77,14 @@
         gobuster: gobuster {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp SPACE &kp D &kp I &kp R &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp COLON &kp AMPS &kp AMPS &kp SPACE &kp FSLH &kp W &kp SPACE>;
+            bindings = <&none &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp SPACE &kp D &kp I &kp R &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp GREATER_THAN &kp AMPS &kp AMPS &kp SPACE &kp FSLH &kp W &kp SPACE>;
             label = "GOBUSTER";
         };
 
         powershell: powershell {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp COLON &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp AMPS &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp N3 &kp N2 &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp LS(P) &kp O &kp W &kp E &kp R &kp LS(S) &kp H &kp E &kp L &kp L &kp AMPS &kp V &kp N1 &kp DOT &kp N0 &kp AMPS &kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp DOT &kp E &kp X &kp E>;
+            bindings = <&none &kp LS(C) &kp GREATER_THAN &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp AMPS &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp N3 &kp N2 &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp LS(P) &kp O &kp W &kp E &kp R &kp LS(S) &kp H &kp E &kp L &kp L &kp AMPS &kp V &kp N1 &kp DOT &kp N0 &kp AMPS &kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp DOT &kp E &kp X &kp E>;
             label = "POWERSHELL";
         };
     };
