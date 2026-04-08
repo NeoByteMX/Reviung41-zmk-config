@@ -42,21 +42,21 @@
         Code_Bash: Code_Bash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LA(NUHS) &kp LA(NUHS) &kp LA(NUHS) &kp LA(NUHS) &kp BACKSPACE &kp B &kp A &kp S &kp H &kp ENTER>;
+            bindings = <&none &kp RA(NUHS) &kp RA(NUHS) &kp RA(NUHS) &kp RA(NUHS) &kp BACKSPACE &kp B &kp A &kp S &kp H &kp ENTER>;
             label = "CODE_BASH";
         };
 
         info_warning: info_warning {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(NON_US_BSLH) &kp SPACE &kp LS(SINGLE_QUOTE) &kp EXCLAMATION>;
+            bindings = <&none &kp LS(NON_US_BSLH) &kp SPACE &kp LS(SINGLE_QUOTE) &kp EXCLAMATION &kp W &kp A &kp R &kp N &kp I &kp N &kp G &kp RIGHT &kp ENTER>;
             label = "INFO_WARNING";
         };
 
         nmap: nmap {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N &kp M &kp A &kp P &kp SPACE &kp FSLH &kp S &kp LS(C) &kp SPACE &kp FSLH &kp S &kp LS(V) &kp SPACE &kp FSLH &kp P &kp FSLH &kp SPACE &kp I &kp P &kp SPACE &kp FSLH &kp O &kp LS(N) &kp SPACE &kp N &kp M &kp A &kp P &kp UNDER &kp I &kp N &kp I &kp C &kp I &kp A &kp L &kp DOT &kp T &kp X &kp T>;
+            bindings = <&none &kp N &kp M &kp A &kp P &kp SPACE &kp FSLH &kp S &kp LS(C) &kp SPACE &kp FSLH &kp S &kp LS(V) &kp SPACE &kp FSLH &kp P &kp FSLH &kp SPACE &kp I &kp P &kp SPACE &kp FSLH &kp O &kp LS(N) &kp SPACE>;
             label = "NMAP";
         };
 
@@ -77,7 +77,7 @@
         gobuster: gobuster {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp SPACE &kp D &kp I &kp R &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp COLON &kp AMPS &kp AMPS &kp LS(T) &kp LS(A) &kp LS(R) &kp LS(G) &kp LS(E) &kp LS(T) &kp SPACE &kp FSLH &kp W &kp SPACE &kp AMPS &kp U &kp S &kp R &kp AMPS &kp S &kp H &kp A &kp R &kp E &kp AMPS &kp W &kp O &kp R &kp D &kp L &kp I &kp S &kp T &kp S &kp AMPS &kp D &kp I &kp R &kp B &kp AMPS &kp C &kp O &kp M &kp M &kp O &kp N &kp DOT &kp T &kp X &kp T &kp SPACE &kp FSLH &kp O &kp SPACE &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp QMARK &kp O &kp U &kp T &kp P &kp U &kp T &kp DOT &kp T &kp X &kp T>;
+            bindings = <&none &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp SPACE &kp D &kp I &kp R &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp COLON &kp AMPS &kp AMPS &kp SPACE &kp FSLH &kp W &kp SPACE>;
             label = "GOBUSTER";
         };
     };
