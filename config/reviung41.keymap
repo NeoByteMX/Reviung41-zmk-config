@@ -73,6 +73,13 @@
             bindings = <&none &kp P &kp Y &kp T &kp H &kp O &kp N &kp N3 &kp SPACE &kp FSLH &kp M &kp SPACE &kp H &kp T &kp T &kp P &kp DOT &kp S &kp E &kp R &kp V &kp E &kp R &kp SPACE &kp N8 &kp N0 &kp N8 &kp N0>;
             label = "PYTHON_SERVER";
         };
+
+        gobuster: gobuster {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp SPACE &kp D &kp I &kp R &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp COLON &kp AMPS &kp AMPS &kp LS(T) &kp LS(A) &kp LS(R) &kp LS(G) &kp LS(E) &kp LS(T) &kp SPACE &kp FSLH &kp W &kp SPACE &kp AMPS &kp U &kp S &kp R &kp AMPS &kp S &kp H &kp A &kp R &kp E &kp AMPS &kp W &kp O &kp R &kp D &kp L &kp I &kp S &kp T &kp S &kp AMPS &kp D &kp I &kp R &kp B &kp AMPS &kp C &kp O &kp M &kp M &kp O &kp N &kp DOT &kp T &kp X &kp T &kp SPACE &kp FSLH &kp O &kp SPACE &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp QMARK &kp O &kp U &kp T &kp P &kp U &kp T &kp DOT &kp T &kp X &kp T>;
+            label = "GOBUSTER";
+        };
     };
 
     keymap {
@@ -117,8 +124,8 @@
 
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT       &kp HASH       &kp DOLLAR  &kp PERCENT                &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp RCTRL       &kp GRAVE        &kp Q        &trans         &trans      &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &nmap       &wordlists                 &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
+&kp RCTRL       &kp GRAVE        &kp Q        &nmap          &gobuster   &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &wordlists  &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
                                               &kp RIGHT_ALT  &mo 3                       &kp SPACE                   &trans           &kp LEFT_WIN
             >;
         };
