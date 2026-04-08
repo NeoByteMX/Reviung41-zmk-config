@@ -60,24 +60,10 @@
             label = "PYTHON_SERVER";
         };
 
-        powershell: powershell {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp GT &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp AMPS &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp N3 &kp N2 &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp LS(P) &kp O &kp W &kp E &kp R &kp LS(S) &kp H &kp E &kp L &kp L &kp AMPS &kp V &kp N1 &kp DOT &kp N0 &kp AMPS &kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp DOT &kp E &kp X &kp E>;
-            label = "POWERSHELL";
-        };
-
-        ffuf: ffuf {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp F &kp F &kp U &kp F &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp GT &kp AMPS &kp AMPS &kp I &kp T &kp GT &kp N3 &kp N0 &kp N0 &kp N0 &kp AMPS &kp LS(F) &kp LS(U) &kp LS(Z) &kp LS(Z) &kp SPACE &kp FSLH &kp W &kp SPACE &kp AMPS &kp U &kp S &kp R &kp AMPS &kp S &kp H &kp A &kp R &kp E &kp AMPS &kp W &kp O &kp R &kp D &kp L &kp I &kp S &kp T &kp S &kp AMPS &kp D &kp I &kp R &kp B &kp AMPS &kp C &kp O &kp M &kp M &kp O &kp N &kp DOT &kp T &kp X &kp T &kp SPACE &kp FSLH &kp M &kp C &kp SPACE &kp N2 &kp N0 &kp N0 &kp COMMA &kp N3 &kp N0 &kp N1 &kp SPACE &kp FSLH &kp O &kp SPACE &kp R &kp E &kp S &kp U &kp L &kp T &kp A &kp D &kp O &kp S &kp DOT &kp M &kp D &kp SPACE &kp FSLH &kp O &kp F &kp SPACE &kp M &kp D>;
-            label = "FFUF";
-        };
-
         nmap: nmap {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N &kp M &kp A &kp P &kp SPACE &kp FSLH &kp S &kp LS(C) &kp SPACE &kp FSLH &kp S &kp LS(V) &kp SPACE &kp FSLH &kp P &kp FSLH &kp SPACE &kp FSLH &kp O &kp LS(N) &kp SPACE &kp N &kp M &kp A &kp P &kp DOT &kp T &kp X &kp T &kp SPACE &kp I &kp P>;
+            bindings = <&none &kp N &kp M &kp A &kp P &kp SPACE &kp FSLH &kp S &kp LS(C) &kp SPACE &kp FSLH &kp S &kp LS(V) &kp SPACE &kp FSLH &kp P &kp FSLH &kp SPACE &kp FSLH &kp O &kp LS(N) &kp SPACE &kp N &kp M &kp A &kp P &kp DOT &kp T &kp X &kp T &kp SPACE>;
             label = "NMAP";
         };
     };
@@ -124,8 +110,8 @@
 
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT       &kp HASH       &kp DOLLAR  &kp PERCENT                &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp RCTRL       &kp GRAVE        &kp Q        &nmap          &ffuf       &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &trans      &powershell                &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
+&kp RCTRL       &kp GRAVE        &kp Q        &trans         &nmap       &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &trans      &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
                                               &kp RIGHT_ALT  &mo 3                       &kp SPACE                   &trans           &kp LEFT_WIN
             >;
         };
