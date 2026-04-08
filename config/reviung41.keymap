@@ -63,15 +63,8 @@
         powershell: powershell {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&none &kp LS(C) &kp GT &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp AMPS &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp N3 &kp N2>,
-                <&macro_wait_time 50>,
-                <&kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp LS(P) &kp O &kp W &kp E &kp R &kp LS(S) &kp H &kp E &kp L &kp L &kp AMPS &kp V &kp N1 &kp DOT &kp N0>,
-                <&macro_wait_time 50>,
-                <&kp AMPS &kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp DOT &kp E &kp X &kp E>;
-
+            bindings = <&none &kp LS(C) &kp GT &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp AMPS &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp N3 &kp N2 &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp LS(P) &kp O &kp W &kp E &kp R &kp LS(S) &kp H &kp E &kp L &kp L &kp AMPS &kp V &kp N1 &kp DOT &kp N0 &kp AMPS &kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp DOT &kp E &kp X &kp E>;
             label = "POWERSHELL";
-            wait-ms = <30>;
         };
 
         ffuf: ffuf {
@@ -79,7 +72,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp F &kp F &kp U &kp F &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp GT &kp AMPS &kp AMPS &kp I &kp T &kp GT &kp N3 &kp N0 &kp N0 &kp N0 &kp AMPS &kp LS(F) &kp LS(U) &kp LS(Z) &kp LS(Z) &kp SPACE &kp FSLH &kp W &kp SPACE &kp AMPS &kp U &kp S &kp R &kp AMPS &kp S &kp H &kp A &kp R &kp E &kp AMPS &kp W &kp O &kp R &kp D &kp L &kp I &kp S &kp T &kp S &kp AMPS &kp D &kp I &kp R &kp B &kp AMPS &kp C &kp O &kp M &kp M &kp O &kp N &kp DOT &kp T &kp X &kp T &kp SPACE &kp FSLH &kp M &kp C &kp SPACE &kp N2 &kp N0 &kp N0 &kp COMMA &kp N3 &kp N0 &kp N1 &kp SPACE &kp FSLH &kp O &kp SPACE &kp R &kp E &kp S &kp U &kp L &kp T &kp A &kp D &kp O &kp S &kp DOT &kp M &kp D &kp SPACE &kp FSLH &kp O &kp F &kp SPACE &kp M &kp D>;
             label = "FFUF";
-            wait-ms = <60>;
         };
 
         nmap: nmap {
@@ -87,7 +79,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp N &kp M &kp A &kp P &kp SPACE &kp FSLH &kp S &kp LS(C) &kp SPACE &kp FSLH &kp S &kp LS(V) &kp SPACE &kp FSLH &kp P &kp FSLH &kp SPACE &kp FSLH &kp O &kp LS(N) &kp SPACE &kp N &kp M &kp A &kp P &kp DOT &kp T &kp X &kp T &kp SPACE &kp I &kp P>;
             label = "NMAP";
-            wait-ms = <100>;
         };
     };
 
