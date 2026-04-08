@@ -80,6 +80,13 @@
             bindings = <&none &kp G &kp O &kp B &kp U &kp S &kp T &kp E &kp R &kp SPACE &kp D &kp I &kp R &kp SPACE &kp FSLH &kp U &kp SPACE &kp H &kp T &kp T &kp P &kp COLON &kp AMPS &kp AMPS &kp SPACE &kp FSLH &kp W &kp SPACE>;
             label = "GOBUSTER";
         };
+
+        powershell: powershell {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(C) &kp COLON &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp AMPS &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp N3 &kp N2 &kp AMPS &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp LS(P) &kp O &kp W &kp E &kp R &kp LS(S) &kp H &kp E &kp L &kp L &kp AMPS &kp V &kp N1 &kp DOT &kp N0 &kp AMPS &kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp DOT &kp E &kp X &kp E>;
+            label = "POWERSHELL";
+        };
     };
 
     keymap {
@@ -125,7 +132,7 @@
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT       &kp HASH       &kp DOLLAR  &kp PERCENT                &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp RCTRL       &kp GRAVE        &kp Q        &nmap          &gobuster   &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &wordlists  &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
+&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &wordlists  &powershell                &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
                                               &kp RIGHT_ALT  &mo 3                       &kp SPACE                   &trans           &kp LEFT_WIN
             >;
         };
