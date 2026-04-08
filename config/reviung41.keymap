@@ -125,7 +125,7 @@
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT       &kp HASH       &kp DOLLAR  &kp PERCENT                &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp RCTRL       &kp GRAVE        &kp Q        &nmap          &gobuster   &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &wordlists  &powershell                &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
+&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &wordlists  &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
                                               &kp RIGHT_ALT  &mo 3                       &kp SPACE                   &trans           &kp LEFT_WIN
             >;
         };
