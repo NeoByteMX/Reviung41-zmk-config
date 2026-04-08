@@ -35,7 +35,7 @@
         Title_Bold: Title_Bold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp POUND &kp POUND &kp POUND &kp SPACE &kp RBKT &kp RBKT &kp LS(T) &kp I &kp T &kp L &kp E &kp RBKT &kp RBKT>;
+            bindings = <&none &kp POUND &kp POUND &kp POUND &kp SPACE &kp LS(RIGHT_BRACKET) &kp LS(RIGHT_BRACKET) &kp LS(T) &kp I &kp T &kp L &kp E &kp LS(RBKT) &kp LS(RBKT)>;
             label = "TITLE_BOLD";
         };
 
@@ -44,6 +44,13 @@
             #binding-cells = <0>;
             bindings = <&none &kp LA(NUHS) &kp LA(NUHS) &kp LA(NUHS) &kp LA(NUHS) &kp BACKSPACE &kp B &kp A &kp S &kp H &kp ENTER>;
             label = "CODE_BASH";
+        };
+
+        info_warning: info_warning {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(NON_US_BSLH) &kp SPACE &kp LS(SINGLE_QUOTE) &kp EXCLAMATION>;
+            label = "INFO_WARNING";
         };
     };
 
