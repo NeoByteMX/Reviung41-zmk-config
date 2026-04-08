@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: nice_nano_v2_zmk
+  - board: nice_nano//zmk
     shield: reviung41
