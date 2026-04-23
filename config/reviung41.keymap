@@ -66,6 +66,13 @@
             bindings = <&none &kp N &kp M &kp A &kp P &kp SPACE &kp FSLH &kp S &kp LS(C) &kp SPACE &kp FSLH &kp S &kp LS(V) &kp SPACE &kp FSLH &kp P &kp FSLH &kp SPACE &kp FSLH &kp O &kp LS(N) &kp SPACE &kp N &kp M &kp A &kp P &kp DOT &kp T &kp X &kp T &kp SPACE>;
             label = "NMAP";
         };
+
+        CheckList: CheckList {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp FSLH &kp SPACE &kp DQT &kp SPACE &kp PIPE>;
+            label = "CHECKLIST";
+        };
     };
 
     keymap {
@@ -111,7 +118,7 @@
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT       &kp HASH       &kp DOLLAR  &kp PERCENT                &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp RCTRL       &kp GRAVE        &kp Q        &trans         &nmap       &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &trans      &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
+&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &CheckList  &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
                                               &kp RIGHT_ALT  &mo 3                       &kp SPACE                   &trans           &kp LEFT_WIN
             >;
         };
