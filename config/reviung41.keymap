@@ -101,10 +101,10 @@
             //                       |     |     | RET | ADJ |     |
 
             bindings = <
-&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5             &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0      &kp BACKSPACE
-&kp LEFT_CONTROL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &trans        &trans             &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT  &kp ESCAPE  &kp DELETE
-&kp LEFT_SHIFT    &pc           &key          &new_work      &trans        &trans             &kp HOME      &kp END   &kp PG_UP     &kp PG_DN  &kp PSCRN   &kp ENTER
-                                              &kp RIGHT_ALT  &trans                &kp SPACE                &mo 3     &kp LEFT_WIN
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                        &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0      &kp BACKSPACE
+&kp LEFT_CONTROL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &trans        &kp C_VOLUME_UP               &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT  &kp ESCAPE  &kp DELETE
+&kp LEFT_SHIFT    &pc           &key          &new_work      &trans        &kp C_VOLUME_DOWN             &kp HOME      &kp END   &kp PG_UP     &kp PG_DN  &kp PSCRN   &kp ENTER
+                                              &kp RIGHT_ALT  &trans                           &kp SPACE                &mo 3     &kp LEFT_WIN
             >;
         };
 
