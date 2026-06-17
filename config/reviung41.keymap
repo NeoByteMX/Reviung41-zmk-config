@@ -46,13 +46,6 @@
             label = "CODE_BASH";
         };
 
-        info_warning: info_warning {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LS(NON_US_BSLH) &kp SPACE &kp LS(SINGLE_QUOTE) &kp EXCLAMATION &kp W &kp A &kp R &kp N &kp I &kp N &kp G &kp RIGHT &kp ENTER>;
-            label = "INFO_WARNING";
-        };
-
         python_server: python_server {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -117,8 +110,8 @@
 
             bindings = <
 &kp TAB         &kp EXCLAMATION  &kp AT       &kp HASH       &kp DOLLAR  &kp PERCENT                &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp RCTRL       &kp GRAVE        &kp Q        &trans         &nmap       &python_server             &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &info_warning  &CheckList  &trans                     &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
+&kp RCTRL       &kp GRAVE        &kp Q        &trans         &trans      &trans                     &kp MINUS        &kp EQUAL        &kp LBKT      &kp RBKT              &kp BSLH               &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &Code_Bash       &Title_Bold  &nmap          &CheckList  &python_server             &kp NON_US_BSLH  &kp NON_US_HASH  &kp COMMA     &kp DOT               &kp SLASH              &kp BACKSLASH
                                               &kp RIGHT_ALT  &mo 3                       &kp SPACE                   &trans           &kp LEFT_WIN
             >;
         };
