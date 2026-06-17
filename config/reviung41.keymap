@@ -46,13 +46,6 @@
             label = "CODE_BASH";
         };
 
-        info_warning: info_warning {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LS(NON_US_BSLH) &kp SPACE &kp LS(SINGLE_QUOTE) &kp EXCLAMATION &kp W &kp A &kp R &kp N &kp I &kp N &kp G &kp RIGHT &kp ENTER>;
-            label = "INFO_WARNING";
-        };
-
         python_server: python_server {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
